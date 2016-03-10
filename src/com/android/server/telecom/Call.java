@@ -685,6 +685,10 @@ public class Call implements CreateConnectionResponse {
         return mCallerInfo == null ? null : mCallerInfo.cachedPhoto;
     }
 
+    public String getPhoneNumber() {
+        return mCallerInfo == null ? null : mCallerInfo.phoneNumber;
+    }
+
     /**
      * @param disconnectCause The reason for the disconnection, represented by
      *         {@link android.telecom.DisconnectCause}.
